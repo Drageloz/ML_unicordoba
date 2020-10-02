@@ -27,65 +27,23 @@
 \maketitle%
 \section{Abstract}%
 \label{sec:Abstract}%
-nan%
-nan
+Las células solares orgánicas nos muestran un camino interesante hacia el uso de energías renovables ecológicas y amigables. Eso nos ayudará a mitigar el efecto o huella de carbono. Se están cuestionando formas eficientes de convertir la energía solar en electricidad, como el uso de materiales, buscando las mejores propiedades que permitan una óptima conversión energética. Este trabajo explora el uso de técnicas de aprendizaje automático (ML) para ayudar a optimizar propiedades moleculares como el orbital molecular de alta ocupación (HOMO) y las energías de orbital molecular desocupado más bajo (LUMO), así como el cálculo y calibración de la eficiencia de conversión de potencia (PCE). ) con el ánimo de buscar grandes candidatas a moléculas orgánicas para su uso como sistemas donante{-}receptor en células solares. En particular, probamos una calibración del proceso gaussiano como un modelo ML en un conjunto de moléculas reportadas en la literatura {[}1{]} y discutimos algunos aspectos tanto de las propiedades químicas como de la ventaja de usar ML%
+Keywords: Organic Solar Cell, Small Molecules, Machine Learning, Computational Chemistry, Quantum Systems.
 
 %
-\section{Descripción del proceso}%
-\label{sec:Descripcindelproceso}%
-Según lo estudiado en el artículo Design Principles and Top Non{-}Fullerene Acceptor Candidates for Organic Photovoltaics, vemos que se sigue la siguiente secuencia en la ejecución que lleva a las móleculas deseadas:%
+\section{Avances recientes}%
+\label{sec:Avancesrecientes}%
+ORCA es un programa flexible para química computacional que hace especial énfasis en propiedades espectroscópicas de moléculas de capa abierta. Trata una gran variedad de métodos de química cuántica desde métodos semiempíricos, la teoría del funcional de la densidad (Density Functional Theory, DFT), hasta métodos~ab initio~simples y de multireferencia, así como efectos relativísticos y medioambientales.%
 
 
 \begin{figure}[h!]%
 \centering%
-\includegraphics[width=180px]{/content/img/secuenciaArticleNo-fullerene.png}%
-\caption{Secuencia del artículo}%
+\includegraphics[width=180px]{/content/img/orca_logo_mpi.png}%
+\caption{Logo del programa Orca}%
 \end{figure}
 
 %
-Es así que a través de unas móleculas definidad con anterioridad, las cuales se encuentran en el Data S1, en el siguiente enlace https://doi.org/10.1016/j.joule.2017.10.006. Se procede a realizar con los smiles descritos en la tabla S1, una muestra de conformers, los cuales se busca su minimal local energy a través de méthodos de mecánica molecular tal como el force field, que busca la reducción de la energía total descrita en la fórmula siguiente:%
-\begin{equation}
-    E_{tot} = E_{str} + E_{bend} + E_{oop} + E_{tors} + E_{cross} + E_{vdw} + E_{es} 
-\end{equation}%
-Donde tenemos que para la stretching energy $E_{str}$ se encuentra su valor a través de la fórmula (Cabe resaltar que la siguiente fórmula no se usa en los métodos cómo MMFF94, donde se términos cuadráticos y cúbicos):%
-\begin{equation}
-    E_{str} = \frac{1}{2} \sum_{bonds} k_b(r-r_0)^2%
-\end{equation}%
-Donde:
-\begin{fleqn}
-\begin{equation*}
-\begin{alignedat}{2}
-\\ &k_b = bond-stretching \ force \ constant \\  
-&r = actual\ bond\ length \\ 
-&r_0 = defines\ equilibrium\ length\\
-\end{alignedat}
-\end{equation*}
-\end{fleqn}%
-
-
-\begin{figure}[H]%
-\centering%
-\includegraphics[width=160px]{/content/img/Bond_stretching_energy.png}%
-\caption{Bond Energy}%
-\end{figure}
-
-%
-Como podemos ver en la fígura 2, y por la ecuación 2, lo ideal es disminuir la longitud actual de los enlaces a la longitud de equilibrio (la biografía y método para hallarla se encuentra en el siguiente \href{https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Chemical_Bonding/Fundamentals_of_Chemical_Bonding/Bond_Order_and_Lengths}{enlace}. Ahora para la Angle Bending Energy, $E_{bend}$ se encuentra su valor a través de la fórmula:%
-\begin{equation}
-    E_{bend} = \frac{1}{2} \sum_{angles} k_\theta (\theta - \theta_0)^2
-\end{equation}%
-
-
-\begin{figure}[H]%
-\centering%
-\includegraphics[width=180px]{/content/img/angleBending.png}%
-\caption{Bond Energy}%
-\end{figure}
-
-%
-\section{Preguntas}%
-\label{sec:Preguntas}%
-¿La razón por la cual se crean conformers en un inicio, es para dar diferentes configuraciones desde las cuales al aplicar el MMFF se logre una mayor probabilidad de encontrar el mínimo global de la energía?
+Keywords: Organic Solar Cell, Small Molecules, Machine Learning, Computational Chemistry, Quantum Systems.
 
 %
 \end{document}
