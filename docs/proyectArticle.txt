@@ -1,1 +1,0 @@
-Según lo estudiado en el artículo Design Principles and Top Non-Fullerene Acceptor Candidates for Organic Photovoltaics, vemos que se sigue la siguiente secuencia en la ejecución que lleva a las móleculas deseadas:

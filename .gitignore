@@ -3,3 +3,5 @@ config/
 *.dockerignore
 Dockerfile
 *.xz
+.vscode/
+.ipynb_checkpoints/
